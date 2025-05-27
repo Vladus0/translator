@@ -16,8 +16,7 @@ article = f"""
 """
 
 
-print(LANGUAGES)
-language = input("Выберите язык на который хотите перевести статью: ")
+language = input(f"{LANGUAGES} \nВыберите язык на который хотите перевести статью: ")
 
 translated_article = translator.translate(src='en', dest=language, text=article)
 
